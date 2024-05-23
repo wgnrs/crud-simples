@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using usuario.Models;
+using usuario.Repository;
 
 namespace usuario.Controllers
 {
@@ -7,12 +8,11 @@ namespace usuario.Controllers
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private static List<Usuario> Usuarios()
+        private readonly IUsuarioRepository _repository;
+
+        public UsuarioController(IUsuarioRepository repository)
         {
-            return new List<Usuario>
-            {
-                new Usuario {Id = 1, Nome = "Wagner"}
-            };
+            _repository = repository;
         }
 
         [HttpGet]

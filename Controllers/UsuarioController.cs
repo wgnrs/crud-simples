@@ -16,17 +16,21 @@ namespace usuario.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok(Usuarios());
+            var usuarios = await _repository.GetUsuarios();
+            return usuarios.Any()
+                    ? Ok(usuarios)
+                    : BadRequest();
         }
 
         [HttpPost]
-        public IActionResult Post(Usuario usuario)
+        public async Task<IActionResult> Post(Usuario usuario)
         {
-            var usuarios = Usuarios();
-            usuarios.Add(usuario);
-            return Ok(usuarios);
+            _repository.AddUsuario(usuario);
+            return await _repository.SaveChangesAsync()
+                    ? Ok("Usuario adicionado com sucesso")
+                    : BadRequest("Erro ao salvar o usuario");
         }
     }
 }

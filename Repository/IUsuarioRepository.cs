@@ -10,6 +10,6 @@ namespace usuario.Repository
         void UpdateUsuario(Usuario usuario);
         void DeleteUsuario(Usuario usuario);
 
-
+        Task<bool> SaveChangesAsync();
     }
 }

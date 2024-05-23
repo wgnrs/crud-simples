@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj": {}
+    "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj": {}
   },
   "projects": {
-    "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj": {
+    "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
+        "projectUniqueName": "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
         "projectName": "usuario",
-        "projectPath": "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
+        "projectPath": "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
         "packagesPath": "C:\\Users\\wagne\\.nuget\\packages\\",
-        "outputPath": "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\obj\\",
+        "outputPath": "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

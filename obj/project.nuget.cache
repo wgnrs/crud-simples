@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y9xSzdEJG7jhPgnBPhofA33jchUZmNrV1F1HPTsf8ThKrF0tw2Yd56exi3tJ+3ierg15Zjrualp22vLvjVuC0w==",
+  "dgSpecHash": "F8Fd3GukdtMtt5mupVeq5I4RLPQl6NgjdcDqMp+akn7p1yqmHgzn6m2K0tKCrhWFQoytxHYgh2hLiaRY+M9/Jw==",
   "success": true,
-  "projectFilePath": "G:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
+  "projectFilePath": "g:\\Cursos\\Microsoft Learn\\Introdução a um aplicativo WebASP.NET MVC\\usuario\\usuario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wagne\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\wagne\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.19\\microsoft.entityframeworkcore.6.0.19.nupkg.sha512",

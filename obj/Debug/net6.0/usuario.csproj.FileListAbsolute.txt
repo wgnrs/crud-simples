@@ -40,3 +40,4 @@ G:\Cursos\Microsoft Learn\Introdução a um aplicativo WebASP.NET MVC\usuario\bi
 G:\Cursos\Microsoft Learn\Introdução a um aplicativo WebASP.NET MVC\usuario\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 G:\Cursos\Microsoft Learn\Introdução a um aplicativo WebASP.NET MVC\usuario\bin\Debug\net6.0\Humanizer.dll
 G:\Cursos\Microsoft Learn\Introdução a um aplicativo WebASP.NET MVC\usuario\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Cursos\Microsoft Learn\Introdução a um aplicativo WebASP.NET MVC\usuario\obj\Debug\net6.0\usuario.sourcelink.json

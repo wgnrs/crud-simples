@@ -23,14 +23,15 @@ namespace usuario.Repository
             return await _context.Usuarios.ToListAsync();
         }
 
-        public Task<Usuario> GetUsuariosById(int id)
+        public async Task<Usuario> GetUsuariosById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Usuarios.
+                        Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public void UpdateUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Update(usuario);
         }
 
         public void DeleteUsuario(Usuario usuario)

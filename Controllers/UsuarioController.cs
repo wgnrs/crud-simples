@@ -21,7 +21,16 @@ namespace usuario.Controllers
             var usuarios = await _repository.GetUsuarios();
             return usuarios.Any()
                     ? Ok(usuarios)
-                    : BadRequest();
+                    : NoContent();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var usuarios = await _repository.GetUsuariosById(id);
+            return usuarios != null
+                    ? Ok(usuarios)
+                    : NotFound("Usuário não encontrado");
         }
 
         [HttpPost]
@@ -31,6 +40,23 @@ namespace usuario.Controllers
             return await _repository.SaveChangesAsync()
                     ? Ok("Usuario adicionado com sucesso")
                     : BadRequest("Erro ao salvar o usuario");
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, Usuario usuario)
+        {
+            var usuarioBanco = await _repository.GetUsuariosById(id);
+            if (usuarioBanco == null) return NotFound("Usuário não encontrado");
+
+            usuarioBanco.Nome = usuario.Nome ?? usuarioBanco.Nome;
+            usuarioBanco.DataNascimento = usuario.DataNascimento == new DateTime()
+            ? usuario.DataNascimento : usuarioBanco.DataNascimento;
+
+            _repository.UpdateUsuario(usuarioBanco);
+
+            return await _repository.SaveChangesAsync()
+                    ? Ok("Usuario atualizado com sucesso")
+                    : BadRequest("Erro ao atualizar o usuario");
         }
     }
 }
